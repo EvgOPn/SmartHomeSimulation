@@ -12,8 +12,7 @@ namespace LoaderScene.Presentations
 
         protected override void OnAwake()
         {
-            base.OnAwake();
-            Screen.orientation = ScreenOrientation.Portrait;
+            base.OnAwake();            
         }
         
         private void OnEnable()

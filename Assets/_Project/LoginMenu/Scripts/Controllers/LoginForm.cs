@@ -2,6 +2,7 @@ using System;
 using Core.DI;
 using UserManagement;
 using Core.UIFramework;
+using CommonUI.Controllers;
 
 namespace LoaderScene.Controllers
 {
@@ -12,11 +13,11 @@ namespace LoaderScene.Controllers
         public readonly Observable<string> Message = new Observable<string>("");
         public readonly Observable<bool> Remember = new Observable<bool>(true);
         
-        [Inject] private LoginAPI _loginAPI;
-        [Inject] private RoomForm _roomForm;
+        [Inject] private LoginAPI _loginAPI;        
         [Inject] private UserProfile _userProfile;
         [Inject] private WelcomeForm _welcomeForm;
         [Inject] private RecoveryForm _recoveryForm;
+        [Inject] private AuthorizationPanel _authorizationPanel;
 
         protected override void OnAwake()
         {
@@ -56,7 +57,8 @@ namespace LoaderScene.Controllers
         private void OnSuccessfulLogin()
         {
             Hide();
-            _roomForm.Show();            
+            _userProfile.IsAuthorized = true;
+            _authorizationPanel.LaunchApplicationPanel();
         }
         
         private void OnLoginError(string errorMessage)

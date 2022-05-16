@@ -14,9 +14,8 @@ namespace LoaderScene.Controllers
         
         [Inject] private LoginAPI _loginAPI;
         [Inject] private WelcomeForm _welcomeForm;
-        //[Inject] private ConfirmForm _confirmForm;
-        [Inject] private UserProfile _userProfile;
-        [Inject] private AvatarForm _avatarForm;
+        [Inject] private LoginForm _loginForm;
+        [Inject] private UserProfile _userProfile;       
 
         private const float DelayBeforeShowLoginForm = 1.0f;
         
@@ -60,8 +59,7 @@ namespace LoaderScene.Controllers
         public void ShowLoginForm()
         {
             Hide();
-            //_confirmForm.Show();
-            _avatarForm.Show();
+            _loginForm.Show();           
         } 
     }
 }

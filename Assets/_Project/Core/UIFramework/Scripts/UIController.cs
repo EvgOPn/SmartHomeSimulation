@@ -12,8 +12,8 @@ namespace Core.UIFramework
     {
         public readonly Observable<bool> Visibility = new Observable<bool>(false);
         
-        public void Show() =>  Visibility.Set(true);
-        public void Hide() => Visibility.Set(false);
+        public virtual void Show() =>  Visibility.Set(true);
+        public virtual void Hide() => Visibility.Set(false);
         public void ReverseVisibility() => Visibility.Set(!Visibility.Get());
 
         /// <summary>

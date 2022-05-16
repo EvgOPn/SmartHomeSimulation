@@ -20,6 +20,8 @@ namespace UserManagement
         private const string PlayerPrefsV1PasswordKey = "player_password";
         private const float TimeBetweenSendLastTimeOnline = 10.0f;
 
+        public bool IsAuthorized { get; set; } = false;
+
         private float _lastOnlineTimer;
         
         protected override void OnAwake()
