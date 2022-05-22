@@ -8,6 +8,7 @@ namespace UserManagement.Models
     {        
         public string Username = String.Empty;        
         public string PlayFabId = String.Empty;
+        public SensorsData SensorsData;
         public string LastTimeOnline = String.Empty;
 
         private const float MinSecondsToAcceptOnline = 10;

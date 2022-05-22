@@ -10,6 +10,8 @@ namespace CommonUI.Controllers
 		public readonly Observable<bool> AuthorizationPanelEnabled = new Observable<bool>(false);
 		public readonly Observable<bool> ApplicationPanelEnabled = new Observable<bool>(false);
 
+		[Inject] private AuthorizationPanel _authorizationPanel;
+		[Inject] private ApplicationPanel _applicationPanel;
 		[Inject] private UserProfile _userProfile;
 
 		protected override void OnAwake()
@@ -38,13 +40,13 @@ namespace CommonUI.Controllers
 
 			if (!_userProfile.IsAuthorized)
 			{
-				ApplicationPanelEnabled.Set(false);
-				AuthorizationPanelEnabled.Set(true);
+				_applicationPanel.Hide();
+				_authorizationPanel.Show();
 				return;
 			}
 
-			AuthorizationPanelEnabled.Set(false);
-			ApplicationPanelEnabled.Set(true);
+			_authorizationPanel.Hide();
+			_applicationPanel.Show();
 		}
 	}
 }
