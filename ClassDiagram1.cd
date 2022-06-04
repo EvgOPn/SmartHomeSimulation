@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Core.DI.DependentMonoBehaviour">
+    <Position X="6.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Assets\_Project\Core\DI\DependentMonoBehaviour.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Core.UIFramework.UIController">
+    <Position X="9.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAABAAEAAAAAAAAAAEAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>Assets\_Project\Core\UIFramework\Scripts\UIController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Core.UIFramework.UIPresentationModel&lt;ControllerType&gt;">
+    <Position X="3" Y="1.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAQQBAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\_Project\Core\UIFramework\Scripts\UIPresentationModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LoaderScene.Controllers.LoginForm" Collapsed="true">
+    <Position X="14" Y="8.75" Width="1.5" />
+    <InheritanceLine Type="Core.UIFramework.UIController" ManuallyRouted="true">
+      <Path>
+        <Point X="10.25" Y="3.761" />
+        <Point X="10.25" Y="2.914" />
+        <Point X="13.292" Y="2.914" />
+        <Point X="13.292" Y="8.596" />
+        <Point X="14.75" Y="8.596" />
+        <Point X="14.75" Y="8.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AQAAAAACQDAAAgBAAAAAAABAAAAAAJACABAAIABBAQA=</HashCode>
+      <FileName>Assets\_Project\LoginMenu\Scripts\Controllers\LoginForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LoaderScene.Controllers.RegisterForm" Collapsed="true">
+    <Position X="14" Y="6.75" Width="1.5" />
+    <InheritanceLine Type="Core.UIFramework.UIController" ManuallyRouted="true">
+      <Path>
+        <Point X="10.25" Y="3.761" />
+        <Point X="10.25" Y="2.927" />
+        <Point X="13.302" Y="2.927" />
+        <Point X="13.302" Y="6.596" />
+        <Point X="14.75" Y="6.596" />
+        <Point X="14.75" Y="6.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AQAAAAACQKAAIAAAAQABRABAAAABAAACABAAIABBAAA=</HashCode>
+      <FileName>Assets\_Project\LoginMenu\Scripts\Controllers\RegisterForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LoaderScene.Presentations.LoginFormPresentation" Collapsed="true">
+    <Position X="1.25" Y="14" Width="2" />
+    <InheritanceLine Type="Core.UIFramework.UIPresentationModel&lt;ControllerType&gt;" ManuallyRouted="true">
+      <Path>
+        <Point X="3.875" Y="3.761" />
+        <Point X="3.875" Y="5.118" />
+        <Point X="3.979" Y="5.118" />
+        <Point X="3.979" Y="9.607" />
+        <Point X="3.958" Y="9.607" Type="JumpStart" />
+        <Point X="3.792" Y="9.607" Type="JumpEnd" />
+        <Point X="2.25" Y="9.607" />
+        <Point X="2.25" Y="14" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AQAAAAABCAQAAgAAAAgAAAAAAAAAABAIAAQCAAAACAA=</HashCode>
+      <FileName>Assets\_Project\LoginMenu\Scripts\Presentations\LoginFormPresentation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LoaderScene.Presentations.RegisterFormPresentation" Collapsed="true">
+    <Position X="1.25" Y="12" Width="2" />
+    <InheritanceLine Type="Core.UIFramework.UIPresentationModel&lt;ControllerType&gt;" ManuallyRouted="true">
+      <Path>
+        <Point X="3.875" Y="3.761" />
+        <Point X="3.875" Y="10.217" />
+        <Point X="2.25" Y="10.217" />
+        <Point X="2.25" Y="12" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AQAAQACAAAAACgAAAAAABAAAAAAAAAAIAAQCAAAACAA=</HashCode>
+      <FileName>Assets\_Project\LoginMenu\Scripts\Presentations\RegisterFormPresentation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UserManagement.LoginAPI">
+    <Position X="4.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACQAAAAAAAAAAAAAAAgAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>Assets\_Project\UserManagement\Scripts\LoginAPI.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SensorsManagement.SensorsSignalReceiver">
+    <Position X="6.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgEIAAAQDAQAgAAAAAAAABQAAAAAAQAAAgAAAAAAAA=</HashCode>
+      <FileName>Assets\_Project\SensorsManagement\SensorsSignalReceiver.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CommonUI.Controllers.Sensors.FireSensor" Collapsed="true">
+    <Position X="14" Y="4.5" Width="1.5" />
+    <InheritanceLine Type="Core.UIFramework.UIController" ManuallyRouted="true">
+      <Path>
+        <Point X="10.25" Y="3.761" />
+        <Point X="10.25" Y="2.897" />
+        <Point X="13.302" Y="2.897" />
+        <Point X="13.302" Y="4.2" />
+        <Point X="14.75" Y="4.2" />
+        <Point X="14.75" Y="4.5" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAACQAgAAQIAAAEAAAAAAAAEAQAIAAAAAAAgCAE=</HashCode>
+      <FileName>Assets\_Project\CommonUI\Scripts\Controllers\Sensors\FireSensor.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CommonUI.Controllers.Sensors.TemperatureSensor" Collapsed="true">
+    <Position X="14" Y="5.75" Width="1.5" />
+    <InheritanceLine Type="Core.UIFramework.UIController" ManuallyRouted="true">
+      <Path>
+        <Point X="10.25" Y="3.761" />
+        <Point X="10.25" Y="2.863" />
+        <Point X="13.313" Y="2.863" />
+        <Point X="13.313" Y="5.45" />
+        <Point X="14.75" Y="5.45" />
+        <Point X="14.75" Y="5.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAACQAiAAAIAAAEAAAAAAAAEAQAIAAAAAAAgCAE=</HashCode>
+      <FileName>Assets\_Project\CommonUI\Scripts\Controllers\Sensors\TemperatureSensor.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CommonUI.Controllers.Sensors.DoorSensor" Collapsed="true">
+    <Position X="14" Y="7.75" Width="1.5" />
+    <InheritanceLine Type="Core.UIFramework.UIController" ManuallyRouted="true">
+      <Path>
+        <Point X="10.25" Y="3.761" />
+        <Point X="10.25" Y="2.909" />
+        <Point X="13.302" Y="2.909" />
+        <Point X="13.302" Y="7.596" />
+        <Point X="14.75" Y="7.596" />
+        <Point X="14.75" Y="7.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAQAAAACQAgAAAIAAAEAAAAAAAAEAQAIAAAAAAAgCAE=</HashCode>
+      <FileName>Assets\_Project\CommonUI\Scripts\Controllers\Sensors\DoorSensor.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CommonUI.Controllers.Sensors.WaterSensor">
+    <Position X="11" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACQAgAAAIAAAEAAAAAAAAEAQAIAAAAQAAgCAE=</HashCode>
+      <FileName>Assets\_Project\CommonUI\Scripts\Controllers\Sensors\WaterSensor.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CommonUI.Presentations.Sensors.FireSensorPresentation" Collapsed="true">
+    <Position X="1.25" Y="9.75" Width="2" />
+    <InheritanceLine Type="Core.UIFramework.UIPresentationModel&lt;ControllerType&gt;" ManuallyRouted="true">
+      <Path>
+        <Point X="3.875" Y="3.761" />
+        <Point X="3.875" Y="5.147" />
+        <Point X="3.969" Y="5.147" />
+        <Point X="3.969" Y="9.575" />
+        <Point X="3.958" Y="9.575" Type="JumpStart" />
+        <Point X="3.792" Y="9.575" Type="JumpEnd" />
+        <Point X="2.25" Y="9.575" />
+        <Point X="2.25" Y="9.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAgAAAAAAAAAAAAAAABAAIAAAAAAAICAA=</HashCode>
+      <FileName>Assets\_Project\CommonUI\Scripts\Presentations\Sensors\FireSensorPresentation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CommonUI.Presentations.Sensors.TemperatureSensorPresentation" Collapsed="true">
+    <Position X="1.25" Y="11" Width="2" />
+    <InheritanceLine Type="Core.UIFramework.UIPresentationModel&lt;ControllerType&gt;" ManuallyRouted="true">
+      <Path>
+        <Point X="3.875" Y="3.761" />
+        <Point X="3.875" Y="5.121" />
+        <Point X="3.083" Y="5.121" />
+        <Point X="3.083" Y="5.45" />
+        <Point X="3.792" Y="5.45" Type="JumpStart" />
+        <Point X="3.958" Y="5.45" Type="JumpEnd" />
+        <Point X="3.99" Y="5.45" />
+        <Point X="3.99" Y="9.616" />
+        <Point X="3.958" Y="9.616" Type="JumpStart" />
+        <Point X="3.792" Y="9.616" Type="JumpEnd" />
+        <Point X="2.25" Y="9.616" />
+        <Point X="2.25" Y="11" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAgAAAAAAAAAAAAAAABAAIAAAAAAAICAA=</HashCode>
+      <FileName>Assets\_Project\CommonUI\Scripts\Presentations\Sensors\TemperatureSensorPresentation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CommonUI.Presentations.Sensors.DoorSensorPresentation" Collapsed="true">
+    <Position X="1.25" Y="13" Width="2" />
+    <InheritanceLine Type="Core.UIFramework.UIPresentationModel&lt;ControllerType&gt;" ManuallyRouted="true">
+      <Path>
+        <Point X="3.875" Y="3.761" />
+        <Point X="3.875" Y="4.966" />
+        <Point X="3.969" Y="4.966" />
+        <Point X="3.969" Y="9.648" />
+        <Point X="3.958" Y="9.648" Type="JumpStart" />
+        <Point X="3.792" Y="9.648" Type="JumpEnd" />
+        <Point X="2.25" Y="9.648" />
+        <Point X="2.25" Y="13" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAgAAAAAAAAAAAAAAABAAIAAAAAAAICAA=</HashCode>
+      <FileName>Assets\_Project\CommonUI\Scripts\Presentations\Sensors\DoorSensorPresentation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CommonUI.Presentations.Sensors.WaterSensorPresentation">
+    <Position X="2" Y="4.5" Width="2" />
+    <InheritanceLine Type="Core.UIFramework.UIPresentationModel&lt;ControllerType&gt;" ManuallyRouted="true">
+      <Path>
+        <Point X="3" Y="2.346" />
+        <Point X="3.766" Y="2.346" />
+        <Point X="3.766" Y="5.116" />
+        <Point X="3.078" Y="5.116" />
+        <Point X="3.078" Y="5.823" />
+        <Point X="3.792" Y="5.823" Type="JumpStart" />
+        <Point X="3.958" Y="5.823" Type="JumpEnd" />
+        <Point X="4" Y="5.823" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAgAAAAAAAAAAAAAAABAAIAAAAAAAICAA=</HashCode>
+      <FileName>Assets\_Project\CommonUI\Scripts\Presentations\Sensors\WaterSensorPresentation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="SensorsManagement.Interfaces.ISensorSignalReceiver">
+    <Position X="8" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>Assets\_Project\SensorsManagement\Interfaces\ISensorSignalReceiver.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
