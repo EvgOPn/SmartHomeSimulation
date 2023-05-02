@@ -13,7 +13,7 @@ namespace SensorsManagement
 		private const string FlameSensor = "Flame";
 
 		private const string DoorOpened = "1";
-		private const double HighHumidity = 60.00;
+		private const double HighHumidity = 80.00;
 		private const int HighWater = 50;
 		private const int HighFlame = 20;
 
